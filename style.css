@@ -1,0 +1,394 @@
+body {
+  background: url(image/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+    font-size:25px;
+}
+
+img{
+    width:100%;
+}
+a:focus, a:hover{
+    text-decoration: none;
+}
+form{
+    float:left;
+}
+
+
+#mainTitle{
+    padding:1%;
+}
+#arcs{    
+    background:#86a0dc;
+    padding: 1% 2%;
+    height:100%;
+    }
+
+.show-all-control{
+    font-weight: 700;
+    color:#ffffff;
+        margin: 0px;
+}
+
+.show-all-control:hover{
+    font-weight: 700;
+    color:white;
+}
+
+#formLayout{
+
+background:#86a0dc;
+    padding: 1% 2%;
+    height:100%;
+
+}
+
+table{
+    width:95%;
+    margin:2.5%;
+}
+
+.right-float{
+    float:right;
+}
+
+.genre{
+        float: left;
+    padding: 0% 2%;
+    border-right: 1px solid black;
+}
+
+header{
+    background:#2f52a2;
+    color:white;
+}
+
+
+
+#rowCount{    
+    background: #F5F5F5;
+    font-size: 16px;
+    border-bottom: solid #CCCCCC 1px;
+    padding: 0;
+}
+#rowCount > p{
+       padding: 1% 10px 0px 2%;
+}
+
+.searchResultRows{
+   /* background: #ffffff;*/
+    font-size: 16px;
+    border-bottom: solid #CCCCCC 1px;
+    padding: 10px 2% 1%;
+}
+
+
+
+#title{
+   background:#86a0dc;
+    padding: 1% 2%;
+    height:100%; 
+}
+
+
+#navigation > ul {
+        list-style: none;
+    float: right;
+    width:100%;
+}
+
+#navigation > ul> li{
+    display: block;
+    float:right;
+    padding:2%;
+}
+
+
+#navigation > ul> li > a{
+color:white;
+}
+
+
+.info-section{
+    padding:2.5%;
+}
+
+.info-section > p{
+    font-size:18px;
+}
+
+th,td{    padding: 10px;
+    border: 1px solid black;}
+
+.backing {
+    background:#f5f5f5;
+}
+
+.top-margin{
+    margin-top:25px;
+}
+
+.similar-anime p{
+    text-align: center;
+}
+
+.link-format{       width: 100%;
+    padding: 2%;
+    background: #86a0dc;
+    border-radius: 5px;
+    margin: 5% 0%;}
+.link-format p {
+    padding: 2%;
+    text-align: center;
+        margin: 5px 0 5px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
+
+.link-format:hover {
+  background: #2f52a2;
+}
+
+.main-page-link{
+    width: 150px;
+    padding: 1%;
+    background: #86a0dc;
+    border-radius: 5px;
+    margin: 4% 0%;
+}
+
+
+.main-page-link p {
+    padding: 2%;
+    text-align: center;
+        margin: 5px 0 5px;
+}
+
+
+.main-page-link:hover {
+  background: #2f52a2;
+}
+
+#pageDisplay{
+    font-size:16px;
+       BACKGROUND: #2f52a2;
+    text-align: center;
+    padding: 1%;
+    color: white;
+}
+
+#pageDisplay a{
+        font-size: 26px;
+}
+
+#pageDisplay a:hover{
+    color:#86a0dc;
+}
+label{
+    color:#ffffff;
+    font-size:16px;    
+   float:left;
+      line-height: 25px;
+    font-weight: 300;
+    margin: 0% 2%;
+}
+form {
+   width:80%;
+}
+
+select{
+      float: left;
+    display: block;
+    height: 26px;
+}
+input{
+        margin: 0% 2%;
+    width: 100px;
+    float: left; 
+    display: block;
+}
+#searchBox{
+        width: 150px;
+}
+
+
+/*_Reference: http://www.w3schools.com/howto/howto_js_accordion.asp__________________________________________________________________________________________________________*/
+/* Style the buttons that are used to open and close the accordion panel */
+button.showDescription {
+    background-color: #CBD4E7;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.showDescription.active, button.showDescription:hover {
+    background-color: #6085d4;
+    color:white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.description {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.description.show {
+    display: block;
+}
+
+
+
+
+div.description {
+    padding: 0 18px;
+    background-color: white;
+    max-height:500px;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.description.show {
+    opacity: 1;
+    max-height: 750px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+
+
+
+button.showDescription:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.showDescription.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+@media screen and (min-width: 568px) and  (max-width: 1024px) {
+    form{
+        width:100%;
+    }
+    label{
+            color: #ffffff;
+    font-size: 16px;
+    float: left;
+    line-height: 25px;
+    font-weight: 300;
+    margin: 0% 1%;
+    } 
+    .show-all-control {
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    margin: 40px 40% 5px 40%;
+    float: none;
+    width: 20%;
+    padding: 2%;
+    background: #2f52a2;
+}
+    
+    .show-all-control:hover {
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    margin: 40px 40% 5px 40%;
+    float: none;
+    width: 20%;
+    padding: 2%;
+    background: #2f52a2;
+}
+    p{
+            font-size: 14px;
+    }
+    header{
+            padding: 1%;
+    }
+}
+
+
+
+@media screen and  (max-width: 568px) {
+    form{
+        width:100%;
+    }
+    label{
+            color: #ffffff;
+    font-size: 14px;
+    float: left;
+    line-height: 25px;
+    font-weight: 300;
+    margin: 0% 1%;
+    } 
+    .show-all-control {
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    margin: 40px 40% 5px 40%;
+    float: none;
+    width: 20%;
+    padding: 2%;
+    background: #2f52a2;
+}
+    
+    .show-all-control:hover {
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    margin: 40px 40% 5px 40%;
+    float: none;
+    width: 20%;
+    padding: 2%;
+    background: #2f52a2;
+}
+    p{
+            font-size: 14px;
+    }
+    header{
+            padding: 1%;
+    }
+    
+    .genre {
+    float: left;
+    padding: 0% 2%;
+    border-right: 1px solid black;
+    margin: 5% 0%;
+}
+    
+    
+    .similar-anime p{
+        display: none;
+    }
+}
